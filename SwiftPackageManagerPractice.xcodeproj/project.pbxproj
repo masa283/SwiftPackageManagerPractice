@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA07384D25FB66F2000AF4E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AA07384C25FB66F2000AF4E4 /* Kingfisher */; };
+		AA07385025FB6DF2000AF4E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AA07384F25FB6DF2000AF4E4 /* Alamofire */; };
+		AA07389525FBB25C000AF4E4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AA07389425FBB25C000AF4E4 /* KeychainAccess */; };
 		AABC02F425F662A60077B171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F325F662A60077B171 /* AppDelegate.swift */; };
 		AABC02F625F662A60077B171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F525F662A60077B171 /* SceneDelegate.swift */; };
 		AABC02F825F662A60077B171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F725F662A60077B171 /* ViewController.swift */; };
@@ -15,6 +18,8 @@
 		AABC030025F662A80077B171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABC02FE25F662A80077B171 /* LaunchScreen.storyboard */; };
 		AABC030B25F662A80077B171 /* SwiftPackageManagerPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC030A25F662A80077B171 /* SwiftPackageManagerPracticeTests.swift */; };
 		AABC031625F662A80077B171 /* SwiftPackageManagerPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC031525F662A80077B171 /* SwiftPackageManagerPracticeUITests.swift */; };
+		AACEFAE926046FFC00A880C6 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = AACEFAE826046FFC00A880C6 /* Moya */; };
+		AACEFAEC2604706400A880C6 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = AACEFAEB2604706400A880C6 /* Eureka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACEFAEC2604706400A880C6 /* Eureka in Frameworks */,
+				AA07384D25FB66F2000AF4E4 /* Kingfisher in Frameworks */,
+				AA07385025FB6DF2000AF4E4 /* Alamofire in Frameworks */,
+				AACEFAE926046FFC00A880C6 /* Moya in Frameworks */,
+				AA07389525FBB25C000AF4E4 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +154,13 @@
 			dependencies = (
 			);
 			name = SwiftPackageManagerPractice;
+			packageProductDependencies = (
+				AA07384C25FB66F2000AF4E4 /* Kingfisher */,
+				AA07384F25FB6DF2000AF4E4 /* Alamofire */,
+				AA07389425FBB25C000AF4E4 /* KeychainAccess */,
+				AACEFAE826046FFC00A880C6 /* Moya */,
+				AACEFAEB2604706400A880C6 /* Eureka */,
+			);
 			productName = SwiftPackageManagerPractice;
 			productReference = AABC02F025F662A60077B171 /* SwiftPackageManagerPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +233,13 @@
 				Base,
 			);
 			mainGroup = AABC02E725F662A60077B171;
+			packageReferences = (
+				AA07384B25FB66F2000AF4E4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AA07384E25FB6DF2000AF4E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AA07389325FBB25C000AF4E4 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				AACEFAE726046FFC00A880C6 /* XCRemoteSwiftPackageReference "Moya" */,
+				AACEFAEA2604706400A880C6 /* XCRemoteSwiftPackageReference "Eureka" */,
+			);
 			productRefGroup = AABC02F125F662A60077B171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -590,6 +614,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA07384B25FB66F2000AF4E4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
+		AA07384E25FB6DF2000AF4E4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.1;
+			};
+		};
+		AA07389325FBB25C000AF4E4 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		AACEFAE726046FFC00A880C6 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+		AACEFAEA2604706400A880C6 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA07384C25FB66F2000AF4E4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA07384B25FB66F2000AF4E4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AA07384F25FB6DF2000AF4E4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA07384E25FB6DF2000AF4E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AA07389425FBB25C000AF4E4 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA07389325FBB25C000AF4E4 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		AACEFAE826046FFC00A880C6 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACEFAE726046FFC00A880C6 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		AACEFAEB2604706400A880C6 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACEFAEA2604706400A880C6 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AABC02E825F662A60077B171 /* Project object */;
 }

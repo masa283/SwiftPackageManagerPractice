@@ -10,6 +10,7 @@
 		AA07384D25FB66F2000AF4E4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AA07384C25FB66F2000AF4E4 /* Kingfisher */; };
 		AA07385025FB6DF2000AF4E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AA07384F25FB6DF2000AF4E4 /* Alamofire */; };
 		AA07389525FBB25C000AF4E4 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = AA07389425FBB25C000AF4E4 /* KeychainAccess */; };
+		AA1EBE1E2605E2F3000185CB /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA1EBE1D2605E2F3000185CB /* SwiftyStoreKit */; };
 		AABC02F425F662A60077B171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F325F662A60077B171 /* AppDelegate.swift */; };
 		AABC02F625F662A60077B171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F525F662A60077B171 /* SceneDelegate.swift */; };
 		AABC02F825F662A60077B171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC02F725F662A60077B171 /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 				AACEFAEC2604706400A880C6 /* Eureka in Frameworks */,
 				AA07384D25FB66F2000AF4E4 /* Kingfisher in Frameworks */,
 				AA07385025FB6DF2000AF4E4 /* Alamofire in Frameworks */,
+				AA1EBE1E2605E2F3000185CB /* SwiftyStoreKit in Frameworks */,
 				AACEFAE926046FFC00A880C6 /* Moya in Frameworks */,
 				AA07389525FBB25C000AF4E4 /* KeychainAccess in Frameworks */,
 			);
@@ -160,6 +162,7 @@
 				AA07389425FBB25C000AF4E4 /* KeychainAccess */,
 				AACEFAE826046FFC00A880C6 /* Moya */,
 				AACEFAEB2604706400A880C6 /* Eureka */,
+				AA1EBE1D2605E2F3000185CB /* SwiftyStoreKit */,
 			);
 			productName = SwiftPackageManagerPractice;
 			productReference = AABC02F025F662A60077B171 /* SwiftPackageManagerPractice.app */;
@@ -239,6 +242,8 @@
 				AA07389325FBB25C000AF4E4 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				AACEFAE726046FFC00A880C6 /* XCRemoteSwiftPackageReference "Moya" */,
 				AACEFAEA2604706400A880C6 /* XCRemoteSwiftPackageReference "Eureka" */,
+				AA6E60D02605DEE900261C68 /* XCRemoteSwiftPackageReference "R" */,
+				AA1EBE1C2605E2F3000185CB /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
 			);
 			productRefGroup = AABC02F125F662A60077B171 /* Products */;
 			projectDirPath = "";
@@ -640,6 +645,22 @@
 				minimumVersion = 4.2.2;
 			};
 		};
+		AA1EBE1C2605E2F3000185CB /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.16.3;
+			};
+		};
+		AA6E60D02605DEE900261C68 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		AACEFAE726046FFC00A880C6 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -673,6 +694,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA07389325FBB25C000AF4E4 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		AA1EBE1D2605E2F3000185CB /* SwiftyStoreKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA1EBE1C2605E2F3000185CB /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */;
+			productName = SwiftyStoreKit;
 		};
 		AACEFAE826046FFC00A880C6 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
